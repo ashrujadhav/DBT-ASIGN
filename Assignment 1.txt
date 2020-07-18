@@ -1,0 +1,32 @@
+
+CREATE TABLE supplier('s#' char(4), Sname varchar(10),status int(4),City vachar(4));
+
+
+INSERT INTO supplier VALUES('s1','Mini',20,'nagar');
+INSERT INTO supplier VALUES('s2','Lucky',30,'Mumbai');
+INSERT INTO supplier VALUES('s3','Franky',40,'Goa');
+
+
+
+
+/*SELECT * FROM supplier;*/
+CREATE TABLE Parts('p#' char(4), pname varchar(10),color varchar(10),weight int(4),City vachar(4));
+
+
+INSERT INTO Parts VALUES('p1','dimpi','blue',40,'pune');
+INSERT INTO Parts VALUES('p2','Lucky','red',30,'Mumbai');
+INSERT INTO Parts VALUES('p3','Franky','white',40,'Goa');
+/*SELECT * FROM Parts;*/
+
+create table projects('j#' char(4),Jname varchar(5),city varchar(6));
+insert into projects values('j1','sam','pune');
+insert into projects values('j2','tam','ngr');
+insert into projects values('j3','ram','nsk');
+
+create table spj('s#' char(4),'p#' char(4),'j#' char(4),Qty int(4));
+
+select * from supplier;
+select 's#',Sname from supplier;
+select pname,color from parts where city='pune'; 
+select * from supplier where City='nagar' or City='Goa';
+
