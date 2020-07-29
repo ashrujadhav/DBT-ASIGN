@@ -1,0 +1,17 @@
+NAME:- ASHRUBA JADHAV
+ID:- 200240320023
+SUB:- ASSIGNMENT-10
+
+=============================================================
+Q1)
+SELECT N1.SNAME,N2.SNAME,N1.CITY FROM SALESPEOPLE N1,SALESPEOPLE N2
+WHERE N1.CITY=N2.CITY AND N1.SNAME < N2.SNAME;
+
+
+
+-------------------------------------------------------------
+Q2)
+
+SELECT Cname, city from CUSTOMERS WHERE Rating=
+(select rating from CUSTOMERS WHERE Cname='Hoffman');
+-----------------------------------------
